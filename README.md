@@ -3,6 +3,10 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=rrajshree8&label=Profile%20views&color=0e75b6&style=flat" alt="rrajshree8" /> </p>
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/rrajshree8/rrajshree8/output/github-contribution-grid-snake-dark.svg%22 alt="snake animation" />
+</p>
+
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=rrajshree8" alt="rrajshree8" /></a> </p>
 
 - 👨‍💻 All of my projects are available at [https://rrajshree28.vercel.app/](https://rrajshree28.vercel.app/)
