@@ -4,7 +4,13 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=rrajshree8&label=Profile%20views&color=0e75b6&style=flat" alt="rrajshree8" /> </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rrajshree8/rrajshree8/gh-pages/github-contribution-snake.svg" alt="snake animation" />
+  <!-- Light Mode -->
+  <img src="https://raw.githubusercontent.com/rrajshree8/rrajshree8/gh-pages/github-snake-light.svg" alt="snake animation" width="100%" />
+</p>
+
+<p align="center">
+  <!-- Dark Mode -->
+  <img src="https://raw.githubusercontent.com/rrajshree8/rrajshree8/gh-pages/github-snake-dark.svg#gh-dark-mode-only" alt="snake animation dark" width="100%" />
 </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=rrajshree8" alt="rrajshree8" /></a> </p>
