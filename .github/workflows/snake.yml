@@ -14,15 +14,11 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: rrajshree8
-          outputs: |
-            dist/github-contribution-snake.svg
-            dist/github-contribution-snake-dark.svg?palette=github-dark
-          palette: |
-            snake=#8A2BE2
-            dots=#6A5ACD,#8B5CF6,#EC4899,#F472B6,#FDA4AF
+          outputs: dist/github-contribution-snake.svg
 
       - name: Push to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+ 
