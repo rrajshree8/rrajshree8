@@ -2,6 +2,8 @@ name: Generate Contribution Snake
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *" # runs daily
 
 jobs:
   build:
@@ -10,15 +12,38 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Generate GitHub Contribution Snake
+      - name: Generate GitHub Contribution Snake (light)
         uses: Platane/snk@v3
         with:
           github_user_name: rrajshree8
-          outputs: dist/github-contribution-snake.svg
+          outputs: |
+            dist/github-snake-light.svg
+          palette: |
+            snake=#ff3b8d
+            background=#ffffff
+            block=#ffd1dc
+            block1=#ff9ac4
+            block2=#ff6ab0
+            block3=#ff3b8d
+            block4=#d6006e
+
+      - name: Generate GitHub Contribution Snake (dark)
+        uses: Platane/snk@v3
+        with:
+          github_user_name: rrajshree8
+          outputs: |
+            dist/github-snake-dark.svg
+          palette: |
+            snake=#8A2BE2
+            background=#000000
+            block=#6A5ACD
+            block1=#8B5CF6
+            block2=#EC4899
+            block3=#F472B6
+            block4=#FDA4AF
 
       - name: Push to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
- 
