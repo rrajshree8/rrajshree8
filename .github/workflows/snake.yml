@@ -13,20 +13,13 @@ jobs:
       - name: Generate GitHub Contribution Snake
         uses: Platane/snk@v3
         with:
-          github_user_name: shivanshu75
-          outputs: | 
+          github_user_name: rrajshree8
+          outputs: |
             dist/github-contribution-snake.svg
             dist/github-contribution-snake-dark.svg?palette=github-dark
           palette: |
-            # Snake color
             snake=#8A2BE2
-            # Gradient blocks (custom contribution colors)
-            background=#000000
-            block=#6A5ACD
-            block1=#8B5CF6
-            block2=#EC4899
-            block3=#F472B6
-            block4=#FDA4AF
+            dots=#6A5ACD,#8B5CF6,#EC4899,#F472B6,#FDA4AF
 
       - name: Push to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
