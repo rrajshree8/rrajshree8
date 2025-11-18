@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      # ⭐ LIGHT MODE (Grey blocks)
       - name: Generate GitHub Contribution Snake (light)
         uses: Platane/snk@v3
         with:
@@ -21,12 +22,13 @@ jobs:
           palette: |
             snake=#ff3b8d
             background=#ffffff
-            block=#ffd1dc
-            block1=#ff9ac4
-            block2=#ff6ab0
-            block3=#ff3b8d
-            block4=#d6006e
+            block=#d1d1d1
+            block1=#c7c7c7
+            block2=#bdbdbd
+            block3=#b3b3b3
+            block4=#a9a9a9
 
+      # ⭐ DARK MODE (Black blocks)
       - name: Generate GitHub Contribution Snake (dark)
         uses: Platane/snk@v3
         with:
@@ -36,11 +38,11 @@ jobs:
           palette: |
             snake=#8A2BE2
             background=#000000
-            block=#6A5ACD
-            block1=#8B5CF6
-            block2=#EC4899
-            block3=#F472B6
-            block4=#FDA4AF
+            block=#000000
+            block1=#0a0a0a
+            block2=#111111
+            block3=#191919
+            block4=#222222
 
       - name: Push to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
